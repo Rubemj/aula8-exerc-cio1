@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1>35</h1>
+    
+
+    <script>
+        // outputs
+        alert('Meu primeiro JS')
+        console.log('qualquer coisa')
+
+        /* Formas de Declaração*/
+        var variavel1 = 'antiga';
+        const constante = 'não vou mudar';
+        let variavel2 = 'posso mudar a vontade';
+
+        // Tipos de Variáveis
+        let booleano= true; //false
+        let string= 'texto';
+        let numerica= 1.5 // 1 // 1.5
+
+        // Tipos de objetos
+        var meuObjeto = {chave: 'valor'}
+        let meuArray = ['item1',2,false];
+        let meuNull = null;
+        let meuUndefined = undefined
+
+        //Operadores aritmeticos
+        let x = 15
+        let y = 5
+        console.log(x + y)
+        console.log(x - y)
+        console.log(x * y)
+        console.log(x / y)
+        console.log(x % y)
+        console.log('-------')
+
+        //Operadores de comparação
+        console.log(x == y)
+        console.log(x != y)
+        console.log('-------')
+        console.log("5" == 5)
+        console.log("5" === 5)
+        console.log("5" !== 5)
+
+        //Operadores logicos
+        //AND && - true se tudo for true
+        //OR || - false se tudo for false
+        console.log(10 > 5 && 20 > 5) // true
+        console.log(10 < 5 && 20 > 5) // false
+
+        console.log(10 > 5 || 20 < 5) // true
+        console.log(10 < 5 || 20 < 10) // false
+        console.log('-------')
+
+        //Conversão e tipos
+        //String
+        console.log(typeof(12345)); // Verifica o tipo
+        console.log(String(12345)) // explicito
+        console.log(123+" anna"); //
+
+        //Numerico
+        let numero =  Number("5");
+
+        //Booleano
+        console.log(Boolean(0));
+
+        //condicinais
+        // if // else
+        // if (comparação) {Resultado se verdadeiro}
+        let num = 9
+        if (num == 10){
+            console.log("Ele é 10")
+        } else {
+            console.log("não é 10")
+        }
+
+        if (typeof(numero) == "string"){
+            console.log('A variável é string')
+        } else if (typeof(numero) == "number"){
+            console.log("A variável é numérica")
+        }else {
+            console.log('A variável é outro tipo')
+        }
+        console.log('-------')
+
+        //crie um código, que baseado no ano do nascimento
+        //Crie um código para verificar qual a faixa etária do usuário
+        //criança, jovem, adulto, idoso
+
+        let ano = 2013
+        let idade = (2024 - ano)
+        if (idade <= 10 ){
+            console.log("criança")
+        } else if(idade <=17 ){
+            console.log("adolescente")
+        }else if(idade <=60 ){
+            console.log("adulto")
+        }else{
+            console.log("idoso")
+        }
+        
+
+
+    </script>
+</body>
+</html>
